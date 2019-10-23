@@ -13,7 +13,7 @@ import cv2
 NODE_NAME = "inverse_perspective_mapping_node"
 SUB_TOPIC = "image"
 PUB_TOPIC = "image_preproc_ipm"
-DEFAULT_RESOLUTION = (480, 640)
+DEFAULT_RESOLUTION = (360, 640)
 DEFAULT_HORIZON_CORRECTION = 0.05  # 5 %
 QUEUE_SIZE = 1
 

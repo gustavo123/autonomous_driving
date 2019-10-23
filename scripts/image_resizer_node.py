@@ -10,7 +10,7 @@ NODE_NAME = "image_resizer_node"
 SUB_TOPIC = "image"
 PUB_TOPIC = "image_preproc_resized"
 QUEUE_SIZE = 1
-DEFAULT_HEIGHT = 480
+DEFAULT_HEIGHT = 360
 DEFAULT_WIDTH = 640
 
 

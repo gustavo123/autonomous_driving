@@ -17,7 +17,7 @@
         <param name="threshold_high" type="int" value="150" />
         <param name="aperture" type="int" value="3" />
 	<!-- Strassenbreite in Pixel -->
-        <param name="lane_width" type="int" value="20" />
+        <param name="lane_width" type="int" value="35" />
         <!-- Startpunkt in Pixel des ersten Segments -->
         <param name="segment_start" type="int" value="6" />
         <!-- Anzahl Segmente -->

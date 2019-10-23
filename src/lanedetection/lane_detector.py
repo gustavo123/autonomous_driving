@@ -63,7 +63,7 @@ class LaneDetector:
         elif not left_candidate_valid and right_candidate_valid:
             left_point = int(right_candidate - point_distance)
             right_point = right_candidate
-        # check, ob Straßenmarkierungen einen validen Mindestabstand zueinander haben
+        # check, ob Straenmarkierungen einen validen Mindestabstand zueinander haben
         if abs(right_point - left_point) >= self.min_lane_distance:
             return int(left_point), int(right_point)
         return segment.left_point, segment.right_point

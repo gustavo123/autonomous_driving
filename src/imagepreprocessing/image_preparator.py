@@ -43,7 +43,8 @@ class ImagePreparator:
         # maskiert untere Bildhäfte
         image[height - int((height*below)):height, :] = color_black
         # definiere Punkte für Polygon und maskiert die obere und seitliche Bildhälfte
-        pts = np.array([[0, 0], [0, int(height*(above+0.15))], [int(width*side), int(height*above)], [width-int(width*side), int(height*above)], [width, int(height*(above+0.15))], [width, 0]], np.int32)
+        pts = np.array([[0, 0], [0, int(height*(above+0.15))], [int(width*side), int(height*above)], [
+                       width-int(width*side), int(height*above)], [width, int(height*(above+0.15))], [width, 0]], np.int32)
         cv2.fillPoly(image, [pts], color_black)
         return image
 
@@ -73,7 +74,8 @@ class ImagePreparator:
 
         '''
         height, width, channels = image.shape
-        image = image[int((height*above)):height - int((height*below)), int((width*side)):width - int((width*side))]
+        image = image[int((height*above)):height - int((height*below)),
+                      int((width*side)):width - int((width*side))]
         return image
 
     def grayscale(self, image):
